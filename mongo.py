@@ -22,4 +22,9 @@ conn = mongo_connect(MONGO_URI)
 
 coll = conn[DATABASE][COLLECTION]
 
+print(coll)
+
 documents = coll.find()
+
+for doc in documents:
+    print(doc)
